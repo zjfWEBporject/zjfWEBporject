@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tesla</title>
+		<link rel="icon" href="../picture/icon.png">
+		<link rel="stylesheet" type="text/css" href="../Tesla-css/emovaleffect.css"/>
+		<link rel="stylesheet" type="text/css" href="../Tesla-css/finance.css"/>
+		<script src="../Tesla-js/jquery.js"></script>
+	</head>
+	<body>
+		<!-- 头部导航栏 -->
+		<div class="headnavigationbar">
+			<a href="../index.html" class="logo"><img src="../picture/tslsvgbai.svg" alt="Tesla"></a>
+			<ul class="model">
+				<a href="./model-x.html">MODEL S</a>
+				<a href="./model-3.html">MODEL 3</a>
+				<a href="./model-x.html">MODEL X</a>
+				<a href="./model-y.html">MODEL Y</a>
+				<a href="./cybertruck.html">CYBERTRUCK</a>
+				<a href="./powerwall.html">POWERWALL</a>
+			</ul>
+			<div class="onlinestore">
+				<a href="./onlinestore.html" >在线商店</a>
+				<a href="./signin.html" >TESLA 账户</a>
+			</div>
+			<div class="clicksidebar">
+				<div class="sidebartop"></div>
+				<div class="sidebarcenter"></div>
+				<div class="sidebarbottom"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sidebar">
+				<a href="./usedcar.html">认证二手车</a>
+				<a href="./vehiclereplacement.html">车辆置换</a>
+				<a href="./roadster.html">ROADSTER</a>
+				<a href="./energy.html">ENERGY</a>
+				<a href="./keyaccountplan.html">大客户计划</a>
+				<a href="./finance.html">金融服务</a>
+				<a href="./howtocharge.html">如何充电</a>
+				<a href="./findus.html">找到我们</a>
+				<a href="./questionsanswers.html">回答问题</a>
+				<a href="./onlinestore.html">在线商店</a>
+			</div>
+			<div class="greycloth"></div>
+		</div>
+		
+		<!-- 左侧选择框 -->
+		<div class="selectionboxlef">
+			<h1>金融服务</h1>
+			<h2>选择感兴趣的车型</h2>
+			<div class="choicemodels">
+				<span>选择车系</span>
+				<span>选择车型</span>
+				<select id="chexi">
+					<option value ="0">Model 3</option>
+					<option value ="1">Model S</option>
+					<option value ="2">Model X</option>
+					<option value ="3">Model Y</option>
+				</select>
+				<select>	
+					<option value ="">标准续航升级版（中国制造）</option>
+					<option value ="">Performance 高性能版（中国制造）</option>
+				</select>
+				<span>车辆价格 </span>
+				<input type="text" name="" id="vehicleprice" value="249900">
+			</div>
+			<h2>选择感兴趣的车型</h2>
+			<div class="singlechoicebox">
+				<div><p></p></div><span>特斯拉融资租赁</span>
+				<div><p></p></div><span>特斯拉融资租赁</span>
+				<div><p></p></div><span>特斯拉融资租赁</span>
+			</div>
+			<span>通过 Tesla 官方融资租赁（与创富融资租赁联合提供服务）购车。支付一定首付后，每月分期付款并获得车辆使用权，租赁期满后支付残值并获得车辆所有权。</span>
+			<div class="financialsolutions">
+				<span>金融产品</span>
+				<span>贷款期限</span>
+				<select>
+					<option value ="">首付类融资租赁</option>
+				</select>
+				<select>	
+					<option value ="">12个月</option>
+					<option value ="">24个月</option>
+					<option value ="">36个月</option>
+				</select>
+				<span>首付/保证金比例 %</span>
+				<span>年化费率 %</span>
+				<input type="text" name="" id="" value="10">
+				<input type="text" readonly="readonly" value="4.00">
+			</div>
+			<span>特斯拉融资租赁方案仅适用于 Model 3 和 Model Y 车型。</span>
+			<h2>查看适用金融机构</h2>
+			<div class="mechanism">
+				<span>上牌省份</span>
+				<span>上牌城市</span>
+				<span>上牌类型</span>
+				<select id="provlevel" name="provlevel" required="true" form="form1">
+					<option value ="" form="">省份</option>
+				</select> 
+				<select id="citylevel" name="citylevel" required="true">
+					<option value="" required="true">城市</option>
+				</select> 
+				<select name="" id="">
+					<option value ="">个人</option>
+					<option value ="">公司</option>
+				</select>
+			</div>
+			<h2>可申请在线预审批的金融机构</h2>
+			<span style="margin:0;">选择金融机构进行自助在线预审申请，提前了解您目前的贷款额度，帮助您在购车时更好地进行资金规划。</span>
+			<div class="bankimgs">
+				<div><img src="../picture/CMB.png" alt=""></div>
+				<div><img src="../picture/Pingan.png" alt=""></div>
+				<div><img src="../picture/BOC.png" alt=""></div>
+				<div><img src="../picture/Brilliance.png" alt=""></div>
+				<div><img src="../picture/TeslaLeasing.png" alt=""></div>
+				<div><img src="../picture/Chuangfu.png" alt=""></div>
+			</div>
+			<span>其他金融机构</span>
+			<div class="bankimgs" style="height:70px;">
+				<div><img src="../picture/WeBank.png" alt=""></div>
+				<div><img src="../picture/Ecapital.png" alt=""></div>
+			</div>
+			<span>本在线预审批服务由您选择的有资质的合作金融机构单独提供，您选择并继续即代表您同意该金融机构收集您的相关信息并查询您的个人征信。此处预审结果由各金融机构据其自身标准判断，仅供参考，最终以您选择的金融机构的实际审核结果为准。</span>
+		</div>
+		
+		<!-- 右侧描述栏 -->
+		<div class="describe">
+			<img src="../picture/ThumbModel3.png" alt="" id="desig">
+			<h3>Model 3 </h3>
+			<h6>标准续航升级版（中国制造）</h6>
+			<h4>计算结果</h4>
+			<div class="calculationresults">
+				<p>首付款/保证金</p>
+				<div>¥24,990</div>
+				<p>贷款/融资金额</p>
+				<div>¥224,910</div>
+				<p>尾款比例</p>
+				<div>0 %</div>
+				<p>尾款金额</p>
+				<div>¥0</div>
+				<p>月供</p>
+				<div>¥19,492</div>
+			</div>
+			<div class="findyuysj">预约试驾</div>
+			<span>Tesla金融服务由有资质的金融机构提供，此计算结果仅供参考，最终以金融机构实际审核结果为准。 现车和定制车型号及对应价格、贴息比例、贷款区间、库存量等相关信息均以实际情况为准，计算器结果仅供参考。</span>
+		</div>
+		
+		
+		<script src="../Tesla-js/finaceadderss.js"></script>
+		<script src="../Tesla-js/finance.js"></script>
+	</body>
+</html>

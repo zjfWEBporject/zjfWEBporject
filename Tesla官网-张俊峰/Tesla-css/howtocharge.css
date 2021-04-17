@@ -1,0 +1,56 @@
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;position:absolute;top:0;left:0;background:black;opacity:0.8;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:black;}
+.logo img{width:100%;height:100%;}
+.model{width:572px;height:52px;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+.model a{margin:0 10px;font-size:14px;float:left;text-align:center;font-weight:600;color:white;}
+.model a:hover{color:#7F7F7F;transition:0.3s;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:white;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:white;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:100vh;z-index:2;background:black;opacity:0.2;display:none;position:fixed;top:0;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;opacity:1;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+
+/* banner */
+.howbanner{width:100%;margin-top:52px;position:relative;margin-bottom:110px;z-index:-1;}
+.howbanner>img{width:100%;z-index:-5 !important;}
+.howbanner>div{position:absolute;width:1020px;height:61px;top:45px;left:calc(50% - 510px);border-bottom:1px solid white;color:white;}
+.howbanner>div>p{font-size:34px;float:left;}
+.howbanner>div>span{float:right;line-height:36px;margin:0 10px;font-size:13px;}
+
+/* 多种充电方式 */
+.manyways{width:700px;margin:0 auto;height:200px;text-align:center;}
+.manyways>p{font-size:28px;margin-bottom:30px;}
+.manyways>div{font-size:14px;width:700px;color:#393C41;}
+
+/* 在家充电 */
+.hmeway{width:1020px;height:420px;margin:0 auto;}
+.hmeway>img{float:left;height:100%;}
+.hmeway>div{float:right;width:400px;height:100%;}
+.hmeway>div>p{font-size:28px;padding:32px 0 8px;}
+.hmeway>div>span{font-size:14px;color:#393C41;font-weight:400;margin:22px 0;}
+
+/* 旅途中充电 */
+.journeycharge{width:1020px;margin:0 auto;height:610px;margin-top:80px;margin-bottom:140px;}
+.journeycharge>img{width:100%;}
+.journeycharge>p{margin-top:32px;font-size:28px;}
+.journeycharge>span{margin-top:32px;font-size:14px;color:#393C41;}
+
+/* 尾部 */
+.howwei{width:100%;text-align:center;font-size:12px;height:94px;}
+.howwei>span{display:inline-block;margin:0 10px;}
+
+/* 底部 */
+.howbon{width:100%;height:71px;padding:15px 0;position:fixed;bottom:0;border:1px solid #d0d1d2;background-color: rgb(228 228 228);}
+.wbatpjz{width:1020px;margin:0 auto;height:100%;}
+.wbatpjz>p{float:left;font-size:20px;line-height:41px;font-weight:100;}
+.wbatpjz>div{float:right;width:200px;height:40px;border:3px solid black;text-align:center;line-height:34px;font-size:12px;border-radius:20px;transition:0.3s;cursor:pointer;margin:0 4px;}
+.wbatpjz>div:hover{background:black;color:white;}
+.wbatpjz>span{display:block;float:right;width:160px;height:40px;border-top:3px solid transparent;text-align:center;line-height:34px;font-size:12px;border-radius:20px;transition:0.3s;cursor:pointer;background:#3E6AE1;box-sizing:border-box;color:white;margin:0 10px;}
+.wbatpjz>span:hover{border-color:white;}

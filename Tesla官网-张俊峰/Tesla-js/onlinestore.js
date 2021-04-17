@@ -1,0 +1,122 @@
+$(function(){
+	var storage = window.localStorage;
+	//滚动条滚动事件
+	//吸顶导航
+	 $(document).mousewheel(function(even){
+		 //滚动条向下滚动
+		 if(event.deltaY>0){
+			 $('.headnavigationbar').css({background:'white',position:'fixed'});
+			 $('.shpin').css({color:'black'});
+			 $('.logo').find('img').attr('src','../picture/tslsvg.svg');
+			 $('.sptopdao>p').css({color:'black'})
+			 $('.ptori>p').eq(0).css({color:'black'});
+			 $('.ssuuoo').attr('src','../picture/ssuuuohei.png');
+			 $('.gucgh').attr('src','../picture/gwchei.png');
+			  $('#commoditysh').css({background:'black',color:'white'});
+		 }
+		 //滚动条向上滚
+		  if(event.deltaY<0&&scrollY<150){
+			  $('.headnavigationbar').css({background:'transparent'});
+			  $('.shpin').css({color:'white'});
+			  $('.logo').find('img').attr('src','../picture/tslsvgbai.svg');
+			  $('.sptopdao>p').css({color:'white'})
+			  $('.ptori>p').eq(0).css({color:'white'});
+			  $('.ssuuoo').attr('src','../picture/ssuuuobai.png');
+			  $('.gucgh').attr('src','../picture/gucbai.png');
+			  $('#commoditysh').css({background:'white',color:'black'});
+		  }
+	 })
+	 //登录页面点击跳转
+	 $('.tardl').click(function(){djtzdl();});
+	 function djtzdl(){
+		 $(location).attr('href','./signin.html');
+	 }
+	 //鼠标移入导航条
+	 $('.headnavigationbar').mouseover(function(){
+		 $(this).css({background:'white'});
+		 $('.logo>img').attr('src','../picture/tslsvg.svg');
+		 $('.shpin').css({color:'black'});
+		 $('.sptopdao>p').css({color:'black'});
+		 $('.tardl').css({color:'black'});
+		 $('.ssuuoo').attr('src','../picture/ssuohei.png');
+		 $('.gucgh').attr('src','../picture/gwchei.png');
+		 $('#commoditysh').css({background:'black',color:'white'});
+	 })
+	 //鼠标移出导航条
+	 $('.headnavigationbar').mouseout(function(){
+	 		 $(this).css({background:'transparent'});
+			 $('.logo>img').attr('src','../picture/tslsvgbai.svg');
+	 		 $('.shpin').css({color:'white'});
+	 		 $('.sptopdao>p').css({color:'white'});
+	 		 $('.tardl').css({color:'white'});
+	 		 $('.ssuuoo').attr('src','../picture/ssuobai.png');
+			   $('.gucgh').attr('src','../picture/gwcbai.png');
+			   $('#commoditysh').css({background:'white',color:'black'});
+	 })
+	 //鼠标移入列表
+	 $('.sptopdao>p').mouseover(function(){ 
+		$('.listshops>div').eq($(this).index()).css({display:'block'}).siblings('div').css({display:'none'});
+		$('.sptopdao>p').mouseout(function(){
+		  $('.listshops>div').css({display:'none'})
+	  })
+	 })
+	  
+	  //购物车数量
+	  if($('.commoditys>div').index()<0){
+	  			  $('.commoditys>p').css({display:'block'});
+				  $('#commoditysnum').css({display:'none'});
+	  }else{
+	  			  $('.commoditys>p').css({display:'none'});
+				  $('#commoditysnum').css({display:'block'}).text($('.modnum>span').text());
+	  }
+	//数量减少
+	$('.mdman').on('click',function(){
+		var madnums = $('.modnum>span').text();
+		madnums-=1;
+		if($('.modnum>span').text()<=1){
+			$('.modnum>span').text(1);
+		}else{
+			 $('.modnum>span').text(madnums);
+			$('.modtotalprice').text('¥ '+madnums*$('.modprice').text());
+			$('.setents>span').text($('.modtotalprice').text());
+			$('#commoditysnum').text($('.modnum>span').text());
+		}
+	})
+	//数量增加
+	$('.mdmja').on('click',function(){
+		var madnums = Number($('.modnum>span').text()) ;
+		$('.modnum>span').text(madnums+=1);
+		$('.modtotalprice').text('¥ '+madnums*$('.modprice').text());
+		$('.setents>span').text($('.modtotalprice').text());
+		 $('#commoditysnum').text($('.modnum>span').text());
+	})	  
+	  //打开购物车
+	   $('.gucgh').click(function(){
+		   $('.hui').css({display:'block'});
+		   $('.shoppingcarts').animate({right:'0'},500);
+	   })
+	   //关闭购物车
+	   $('.shpnon').click(function(){
+		   $('.hui').css({display:'none'});
+		   $('.shoppingcarts').animate({right:'-600px'},500);
+	   });
+	   //删除商品
+	   $('.delmod').click(function(){
+		   $('.commtype').remove('div');
+		   if($('.commoditys>div').index()<0){
+		   			  $('.commoditys>p').css({display:'block'});
+					  $('#commoditysnum').css({display:'none'});
+				$('.setents>span').text(0);	  
+		   }else{
+		   			  $('.commoditys>p').css({display:'none'});
+		   }
+	   })
+	   var jiage = $('.modtotalprice').text();
+	   $('.setents>span').text(jiage);
+	   
+	   
+	   //跳转商品详情页
+	   $('.swiper-slide').click(function(){
+		   $(location).attr('href','./productdetails.html');	
+	   })
+}) 

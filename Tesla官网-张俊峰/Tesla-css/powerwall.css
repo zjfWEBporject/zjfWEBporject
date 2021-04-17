@@ -1,0 +1,131 @@
+ body{overflow:hidden;}
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;position:absolute;top:0;left:0;z-index:3;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:white;}
+.logo img{width:100%;height:100%;}
+.model{width:572px;height:100%;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+.model a{margin:0 10px;font-size:14px;float:left;text-align:center;color:white;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:white;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:white;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:800px;z-index:2;background:black;opacity:0.2;display:none;position:fixed;top:0;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+.cylidg{color:white;border:5px solid white;font-size:12px;width:200px;height:40px;padding:5px 40px;text-align:center;line-height:20px;position:absolute;top:6px;right:20px;transition:0.5s;cursor:pointer;display:none;}
+.cylidg:hover{background:white;color:black;transition:0.5s;}
+
+/* 左侧导航栏 */
+.powlef{position:fixed;width:200px;height:189px;top:26%;z-index:2;left:20px;color:white;}
+.powlef>p{width:2%;height:23px;float:left;box-sizing:border-box;border-left:1px solid white;margin:2px 0;}
+.powlef>div{width:98%;height:23px;float:left;margin:2px 0;font-size:12px;line-height:23px;padding-left:10px;cursor:pointer;opacity:0;transition:0.3s;}
+.powlef>div:hover{opacity:1 !important;}
+
+/* 回到顶部 */
+.powding{width:24px;position:fixed;top:20px;right:20px;z-index:2;cursor:pointer;display:none;}
+/* logo */
+.fdlogo{position:fixed;width:100px;height:24px;top:15px;left:20px;z-index:2;display:none;cursor:pointer;}
+
+/* 盒子 */
+.powbox{width:100%;height:700vh;position:absolute;top:0;left:0;}
+/* banner */
+.powbanner{width:100%;height:100vh;background:url(../picture/dPWHero.jpg);background-size:100%;background-position:center;color:white;position:relative;}
+.powbanner>h1{font-size:40px;text-align:center;font-weight:400;position:absolute;top:220px;left:calc(50% - 97px);transition:0.8s;opacity:0;}
+.bananie{width:840px;height:66px;position:absolute;bottom:70px;left:calc(50% - 420px);}
+.bananie>li{width:25%;height:100%;box-sizing:border-box;padding:0 20px;text-align:center;float:left;opacity:0;}
+.bananie>li>img{margin:0 auto;}
+.bananie>li>p{font-size:12px;margin-top:5px;}
+.bananie>li:nth-of-type(2){border-left:1px solid white;border-right:1px solid white;}
+.bananie>li>span{font-size:28px;height:40px;line-height:40px;}
+.bananie>li:nth-of-type(4){padding:0;}
+.bananie>li:nth-of-type(4)>div{width:100%;height:40px;border:2px solid white;font-size:12px;border-radius:20px;line-height:38px;cursor:pointer;transition:0.3s;margin-top:14px;}
+.bananie>li:nth-of-type(4)>div:hover{background:white;color:black;}
+
+/* 备用电能 */
+.standbypower{width:100%;height:100vh;position:relative;}
+.sabowimg{width:100%;height:67%;background:url(../picture/DPowerwallSecurity.jpg);background-size:100%;background-position:center;}
+.sabowimg>div{width:1024px;height:84px;margin: 0 auto;padding-top:350px;text-align:center;}
+.sabowimg>div>p{width:33%;height:84px;box-sizing:border-box;float:left;text-align:center;color:white;font-size:12px;transition:0.8s;opacity:0;}
+.sabowimg>div>p:nth-of-type(2){border-left:1px solid white;border-right:1px solid white;}
+.sabowimg>div>p>img{margin:5px auto;}
+.sabtex{width:975px;height:220px;margin:0 auto;padding:48px 0;}
+.abtlef{width:36%;height:100%;float:left;opacity:0;}
+.abtlef>p{font-size:17px;}
+.abtlef>span{font-size:28px;}
+.abtlef>div{font-size:12px;margin-top:20px;width:157px;height:40px;border:3px solid black;text-align:center;line-height:34px;cursor:pointer;transition:0.4s;border-radius:20px;}
+.abtlef>div:hover{background:black;color:white;}
+.abrig{width:64%;height:100%;float:left;font-size:14px;color:#393c41;opacity:0;}
+
+/* 能源供给 */
+.energysupply{width:100%;height:100vh;background:black;color:white;}
+.rgysupptp{width:975px;height:33%;padding-top:50px;margin:0 auto;}
+.upplef{width:36%;height:100%;float:left;}
+.upplef>p{font-size:17px;}
+.upplef>span{font-size:28px;}
+.upplef>div{font-size:12px;margin-top:20px;width:157px;height:40px;border:3px solid white;text-align:center;line-height:34px;cursor:pointer;transition:0.4s;border-radius:20px;}
+.upplef>div:hover{background:white;color:black;}
+.upprig{width:64%;height:100%;float:left;font-size:14px;color:#f4f4f4;}
+.ergysbt{width:100%;height:67%;}
+.ergvdslb{width:100%;height:380px;overflow:hidden;position:relative;}
+.ergvdslb>div{width:500%;height:100%;position:absolute;top:-130px;left:0px;}
+.ergvdslb>div>video{float:left;}
+.vdslbbon{width:1000px;height:90px;margin:10px auto;position:relative;}
+.vdslbbon>div{width:180px;height:100%;float:left;margin:0 10px;cursor:pointer;border-top:4px solid #7F7F7F;color:#7F7F7F;padding:16px;font-size:12px;transition:0.4s;}
+.vdslbbon>div:nth-of-type(1){color:white;}
+.vdslbbon>div:hover{border-color:white;color:white;}
+.vdslbbon>p{width:180px;height:86px;outline:4px solid white;position:absolute;top:4px;left:10px ;cursor:pointer;}
+
+/* 监控和优化 */
+.controls{width:100%;height:100vh;}
+.rolsimg{width:100%;height:67%;background:black;position:relative;overflow:hidden;}
+.rolsimg>img{height:190%;position:absolute;top:-230px;left:-10px;}
+.trollef{width:70px;height:500px;position:absolute;top:0px;left:160px;}
+.trollef>div{width:100%;height:33%;padding:40px 0;color:white;}
+.trollef>div:nth-of-type(2){border-top:1px solid white;border-bottom:1px solid white;}
+.trollef>div>p{width:320px;height:48px;font-size:28px;}
+.trollef>div>span{font-size:12px;}
+.trolltp{width:975px;height:33%;padding-top:50px;margin:0 auto;}
+.rollef{width:36%;height:100%;float:left;}
+.rollef>p{font-size:17px;}
+.rollef>span{font-size:28px;}
+.rollef>div{font-size:12px;margin-top:20px;width:157px;height:40px;border:3px solid black;text-align:center;line-height:34px;cursor:pointer;transition:0.4s;border-radius:20px;}
+.rollef>div:hover{background:black;color:white;}
+.rolrig{width:64%;height:100%;float:left;font-size:14px;color:#393C41;}
+
+/* 设计 */
+.designs{width:100%;height:100vh;}
+.esitex{width:27%;height:100%;float:left;padding:50px 40px 0 24px;}
+.designimg{width:73%;height:100%;float:right;background:url(../picture/dPWDesign2100x1800.jpg);background-size:100%;background-position:center;position:relative;}
+.esitex>p{font-size:17px;}
+.esitex>span{font-size:28px;}
+.esitex>div{padding-top:16px;font-size:14px;color:#393C41;}
+.esihqzx{width:175px;height:40px;text-align:center;line-height:4px;font-size:12px !important;border:3px solid black;border-radius:20px;cursor:pointer;margin-top:300px;transition:0.4s;}
+.esihqzx:hover{background:black;color:white !important;}
+.ignimgtex{width:760px;height:84px;position:absolute;bottom:60px;left:180px;}
+.ignimgtex>div{float:left;width:33%;height:100%;padding:0 20px;}
+.ignimgtex>div:nth-of-type(2){border-left:1px solid  white;border-right:1px solid  white;}
+.ignimgtex>div>p{color:#fff;font-size:12px;}
+.ignimgtex>div>span{height:48px;font-size:28px;color:#FFFFFF;line-height:48px;}
+
+/* 规格 */
+.specifications{width:100%;height:100vh;background:black;padding:48px 24px;}
+.specifications>img{width:50%;margin-top:-50px;float:left;opacity:0;}
+.pecificatex{width:50%;height:600px;float:right;margin-top:100px;color:#f4f4f4;opacity:0;}
+.pecificatex>h2{font-size:28px;margin-bottom:45px;width:100%;}
+.pecificatex>ul{font-size:14px;width:248px;float:left;}
+.pecificatex>ul>div{width:30px;height:0.5px;background:#ffffff80;margin:20px 0 8px 0;}
+.pecificatex>ul>li{font-weight:400;height:24px;line-height:24px;}
+
+/* 订购 */
+.orders{width:100%;height:100vh;background:black;position:relative;}
+.ordcen{width:230px;height:135px;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;color:white;text-align:center;}
+.ordcen>p{font-size:28px;padding-bottom:16px;}
+.ordcen>span{font-size:14px;padding-bottom:14px;}
+.ordcen>div{width:196px;height:40px;line-height:32px;font-size:12px;border:3px solid white;border-radius:20px;margin:0 auto;cursor:pointer;transition:0.4s;}
+.ordcen>div:hover{background:white;color:black;}
+.powbot{width:100%;position:absolute;bottom:40px;text-align:center;}
+.powbot>span{display:inline-block;font-size:12px;color:#F4F4F4;margin:0 10px;cursor:pointer;}

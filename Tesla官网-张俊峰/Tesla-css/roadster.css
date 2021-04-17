@@ -1,0 +1,76 @@
+ body{background:black;color:white;}
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;position:absolute;top:0;left:0;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:black;}
+.logo img{width:100%;height:100%;}
+.model{width:572px;height:52px;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+.model a{margin:0 10px;font-size:14px;float:left;text-align:center;font-weight:600;color:black;}
+.model a:hover{color:#7F7F7F;transition:0.3s;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:black;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:white;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:800px;z-index:2;background:black;opacity:0.2;display:none;position:fixed;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+
+/* roadster */
+.rterhed{width:100%;height:100vh;background:url(../picture/hero.jpg);background-position:center;background-size:100%;}
+.rterhed>h3{font-size:50px;color:#333;text-align:center;padding-top:80px;}
+.rterhed>p{color:white;text-align:center;width:380px;margin:0 auto;padding-top:440px;}
+.rahdtx{width:700px;height:56px;margin:20px auto;position:relative;color:white;text-align:center;}
+.rahdtx>div{float:left;}
+.rhto{height:100%;}
+.rhto>img{width:35px;float:left;margin-top:12px;margin-right:4px;}
+.rhto>p{float:left;font-size:30px;}
+.rhto>div{color:white;font-size:12px;position:absolute;bottom:0;margin-left:4px;}
+.rhwt{width:197px;height:100%;text-align:center;font-size:30px;border:1px solid white;border-top:0;border-bottom:0;margin-left:40px;}
+.rhwt>p{font-size:12px;}
+.rhsu{width:197px;height:100%;text-align:center;font-size:30px;}
+.rhsu>p{font-size:12px;}
+.arljdx{font-size:12px;width:197px;height:42px;border:3px solid white;border-radius:20px;line-height:38px;cursor:pointer;position:absolute;right:-30px;top:6px;transition: 0.3s;}
+.arljdx:hover{background:white;color:black;}
+
+/* 展示视频 */
+.raextion{width:100%;height:349px;margin:90px auto;}
+.raextion>video{width:1240px;height:100%;margin:0 auto;display:block;}
+
+/* 基本规格text */
+.basicspecifications{width:100%;height:560px;color:white;}
+.basicspecifications>div{width:600px;margin:0 auto;font-size:15px;padding:16px 0;border-bottom: 1px solid rgba(255,255,255,0.5);}
+.basicspecifications>div>span{display:inline-block;width:50%;}
+.basicspecifications>div>span:nth-of-type(2){text-align:right;}
+.basicspecifications>div:nth-of-type(10){border:0;}
+
+/* 空气动力 */
+.aerodynamics{width:100%;position:relative;height:100vh;color:white;overflow:hidden;}
+.aerodynamics>img{width:100%;position:absolute;top:-200px;}
+.aerodynamics>div{font-size:30px;position:absolute;bottom:50px;left:18%;}
+.aerodynamics>p{position:absolute;bottom:80px;right:18%;}
+
+/* 内饰 */
+.interior{width:1240px;height:606px;margin:0 auto;}
+.intetex{width:1240px;margin:20px auto;font-size:20px;}
+
+/* 车顶玻璃 */
+.roofglass{width:100%;height:1556px;background:url(../picture/top.jpg);background-size:auto 100%;background-position:center;transition:0.8s;padding:0 10%;margin-bottom:30px;}
+.roofglass>p{font-size:20px;padding-top:1100px;}
+
+/* 揭幕仪式 */
+.unveilingceremony{width:1020px;margin:0 auto;border-bottom:4px solid red;}
+.unveilingceremony>video{width:100%;}
+.placeremo{font-size:14px;text-align:center;margin:10px auto;}
+.gekaix{width:0.5px;height:195px;margin:40px auto;background:#fff;opacity:0.5;}
+
+/* 立即 */
+.subscribe{font-size:12px;width:178px;height:42px;line-height:36px;border:3px solid white;text-align:center;border-radius:20px;margin:10px auto;cursor:pointer;transition:0.4s;}
+.subscribe:hover{background:white;color:black;}
+
+/* 尾部 */
+.roadwwei{width:100%;text-align:center;padding:8px;margin-top:70px;}
+.roadwwei>p{display:inline-block;margin:0 auto;margin:0 10px;font-size:12px;border-bottom:1px solid white;cursor:pointer;transition:0.4s;}
+.roadwwei>p:hover{border-bottom:3px solid white;}

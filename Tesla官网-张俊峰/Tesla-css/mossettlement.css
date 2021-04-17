@@ -1,0 +1,55 @@
+input{cursor:pointer;transition:0.4sborder;}
+select{cursor:pointer;}
+/* 头部 */
+.headnavigationbar{width:100%;height:52px;position:relative;top:0;z-index:2;border-bottom:1px solid #DFDFDF;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:white;}
+.logo img{width:100%;height:100%;}
+
+/* 左侧账户 */
+.accountlef{width:72%;height:calc(100vh - 142px);background:#F4F4F4;overflow-y:auto;padding:3% 10%;}
+.accountlef::-webkit-scrollbar{width:10px;background:transparent;}
+.accountlef::-webkit-scrollbar-thumb{background:#d4d4d4;border-radius:20px;}
+.accountlef>h1{width:100%;font-size:18px;font-weight:400;margin:20px 0 15px;}
+.accountlef>span{width:100%;font-size:18px;margin:20px 0 15px;}
+.accountlef>p{width:100%;box-sizing:border-box;font-size:14px;color:#5C5E62;padding:8px 20px;}
+.personal{width:100%;height:67px;border-bottom:1px solid #ccc;}
+.rsons{float:left;width:24px;height:24px;border:1px solid black;cursor:pointer;border-radius:50%;padding:6px;}
+.rsons>p{width:10px;height:10px;background:black;border-radius:50%;display:none;}
+.rsons:nth-of-type(1)>p{display:block;}
+.personal>span{float:left;font-size:14px;height:24px;line-height:24px;margin:0 20px 0 10px;}
+.persgr{width:100%;height:320px;}
+.gonsi{width:100%;float:left;display:none;}
+.gonsi>p{width:100%;box-sizing:border-box;float:left;font-size:14px;color:#5C5E62;padding:8px 20px;}
+.gonsi>input{width:100%;float:left;padding:10px 20px;box-sizing:border-box;border-radius:20px;background:white;border:1px solid transparent;margin-bottom:30px;}
+.persgr>p{width:50%;box-sizing:border-box;float:left;font-size:14px;color:#5C5E62;padding:8px 20px;}
+.persgr>input{width:48%;float:left;padding:10px 20px;box-sizing:border-box;border-radius:20px;background:white;border:1px solid transparent;margin-right:2%;margin-bottom:30px;}
+.preselt{width:48%;float:left;padding:10px 20px;box-sizing:border-box;border-radius:20px;background:white;border:1px solid transparent;margin-right:2%;margin-bottom:30px;}
+.pickupthecar{width:100%;height:180px;border-top:1px solid #CCCCCC;}
+.pickupthecar>span{width:100%;font-size:18px;margin:20px 0 15px;}
+.pickupthecar>p{width:50%;box-sizing:border-box;font-size:14px;color:#5C5E62;padding:8px 20px;}
+.pickupthecar>select{width:48%;padding:10px 20px;box-sizing:border-box;border-radius:20px;background:white;border:1px solid transparent;margin-right:2%;margin-bottom:30px;}
+.payment{width:100%;height:180px;}
+.payment>div{width:46%;height:54px;border:3px solid black;border-radius:40px;padding:10px;float:left;margin:15px 10px 0 15px;cursor:pointer;text-align:center;font-size:12px;line-height:24px;opacity:0.4;transition:0.3s;}
+
+/* 错误弹窗*/
+.erroralrt{width:200px;height:80px;padding:10px 20px;text-align:center;font-size:14px;color:red;border-radius:15px;position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;background:white;cursor:pointer;display:none;}
+
+/* 右侧信息栏 */
+.informations{width:28%;height:calc(100vh - 142px);overflow-y:auto;position:absolute;right:0;top:52px;padding:10px 25px 50px;}
+.informations::-webkit-scrollbar{width:10px;background:transparent;}
+.informations::-webkit-scrollbar-thumb{background:#d1d1d1;border-radius:20px;}
+.kamlcar{width:100%   ;}
+.informations>h2{font-size:25px;color:#393C41;text-align:center;margin:10px 15px;width:100%;font-weight:400;}
+.informations>h3{font-weight:400;padding:15px 10px;border-bottom:1px solid #ccc;}
+.informations>p{color:#666666;font-size:14px;padding:7px 0;}
+.kioasd{width:100%;height:300px;margin-top:20px;}
+.kioasd>p{width:60%;float:left;height:25px;font-size:14px;color:#333333;line-height:25px;margin:5px 0;}
+.kioasd>span{width:40%;float:right;height:25px;font-size:22px;color:#333;text-align:right;margin:5px 0;}
+
+/* 底部 */
+.totalprice{width:100%;height:90px;padding:10px 0;background:#333333;}
+.totalprice>p{width:141px;height:100%;text-align:center;color:#eee;padding:0 20px;line-height:70px;font-size:12px;border-right: 1px solid #555;margin-right:80px;float:left;}
+.opijsf{float:left;height:100%;width:20%;color:#fff;padding:10px 0;}
+.opijsf>p{float:left;font-size:19px;margin-right:20px;width:120px;}
+.opijsf>span{float:left;font-size:13px;color:#fff;margin-right:20px;width:120px;}
+.redsdi{float:right;width:330px;height:40px;padding:0 40px;background:#384E8A;border-radius:40px;text-align:center;line-height:40px;margin:15px 40px;font-size:12px;color:#8F9197;cursor:no-drop;}

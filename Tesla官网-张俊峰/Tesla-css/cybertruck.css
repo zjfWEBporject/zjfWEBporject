@@ -1,0 +1,94 @@
+body{background:black;overflow-x:hidden;}
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;position:absolute;top:0;left:0;z-index:3;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:black;}
+.logo img{width:100%;height:100%;}
+.model{width:572px;height:100%;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+.model a{margin:0 10px;font-size:14px;float:left;text-align:center;color:black;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:black;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:black;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:800px;z-index:2;background:black;opacity:0.2;display:none;position:fixed;top:0;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+.cylidg{color:white;border:5px solid white;font-size:12px;width:200px;height:40px;padding:5px 40px;text-align:center;line-height:20px;position:absolute;top:6px;right:20px;transition:0.5s;cursor:pointer;display:none;}
+.cylidg:hover{background:white;color:black;transition:0.5s;}
+
+/* banner */
+.cyberbanner{width:100%;height:100vh;background:url(../picture/MainHeroDesktop.jpg);background-position:center center;background-size:100%;}
+.cyberbanner>img{height:106px;position:absolute;left:calc(50% - 188px);top:120px;}
+.cyberbanner>p{color:white;font-size:14px;position:absolute;top:580px;left:calc(50% - 86px);font-weight:500;}
+.cyberbanner>div{color:white;border:5px solid white;font-size:12px;width:200px;height:40px;padding:5px 40px;text-align:center;line-height:20px;position:absolute;top:620px;left:calc(50% - 100px);transition:0.5s;cursor:pointer;}
+.cyberbanner>div:hover{background:white;color:black;transition:0.5s;}
+
+/*  cybertruck介绍  */
+.abriefintroduction{width:100%;height:2350px;background:black;position:relative;color:#f4f4f4;}
+.abriefintroduction>img{width:1240px;position:absolute;left:calc(50% - 620px);}
+.cqwaiguge{top:130px;opacity:0;}
+.wgugtex{width:840px;height:100px;position:absolute;left:calc(50% - 420px);top:780px;opacity:0;}
+.wgugtex>p{width:100%;font-size:24px;margin-bottom:10px;}
+.wgugtex>span{color:#bbb;font-size:14px;}
+.ledbxg{top:950px;opacity:0;}
+.stainlesssteel{width:1240px;height:100px; position:absolute;left:calc(50% - 620px);top:1600px;font-size:14px;color:#bbb;opacity:0;}
+.stainlesssteel>p{float:left;width:300px;font-weight:800;}
+.stainlesssteel>span{float:right;width:800px;}
+.superglass{top:1700px;opacity:0;}
+.glastex{width:1240px;height:100px; position:absolute;left:calc(50% - 620px);top:2450px;font-size:14px;color:#bbb;opacity:0;}
+.glastex>p{float:left;width:300px;font-weight:800;}
+.glastex>span{float:right;width:800px;}
+
+/* 多功能性 */
+.functionality{width:1440px;height:720px;margin:0 auto;overflow:hidden;position:relative;}
+.ional{width:800%;height:100%;background:red;position:absolute;left:-1440px;top:0;}
+.ional>img{width:1440px;height:100%;float:left;}
+.uncti{position:absolute;width:44px;height:44px;border:1px solid white;cursor:pointer;background:rgba(111,111,111,0.7);padding:10px;top:calc(50% - 22px);transition:0.3s;}
+.uncti:hover{background:rgba(111,111,111,0.3);}
+.uncti>img{width:20px;height:20px;}
+.unctilef{left:50px;}
+.unctirig{right:50px;}
+
+/*  */
+.rsatiltex{width:1240px;height:200px;margin:50px auto 0;padding:20px 0;}
+.rsatiltex>p{width:100%;font-size:24px;margin-bottom:10px;color:#bbb;}
+.rsatiltex>span{color:#bbb;font-size:14px;float:right;}
+
+/* 性能与效率 */
+.performance{width:1240px;height:620px;margin:0 auto;}
+.performance>video{width:100%;height:100%;}
+.xnyuxitexs{width:1240px;height:200px;margin:50px auto 0;padding:20px 0;}
+.xnyuxitexs>p{width:100%;font-size:24px;margin-bottom:10px;color:#bbb;}
+.xnyuxitexs>span{color:#bbb;font-size:14px;float:right;}
+
+/* 规格 */
+.specification{width:1240px;height:800px;margin:0 auto;}
+.eciftx{width:50%;float:left;height:100%;color:#bbb;}
+.eciftx>h3{width:100%;display:block;font-size:24px;color:#f4f4f4;padding-bottom:8px;font-weight:400;}
+.exbianh{width:100%;height:18px;margin-bottom:20px;}
+.singlemotor{width:150px;height:18px;color:#fff;float:left;cursor:pointer}
+.singlemotor>div{width:14px;height:14px;padding:2px;border:2px solid white;float:left;}
+.singlemotor>div>span{width:100%;height:100%;display:block;}
+.singlemotor:nth-of-type(1)>div>span{background:white}
+.singlemotor>p{float:left;font-size:12px;line-height:14px;margin-left:20px;}
+.eciftx>ul{width:90%;height:100%;font-size:12px;}
+.eciftx>ul>li{width:100%;height:60px;border-top:1px solid #bbbb80;box-sizing:border-box;padding:19px 0;}
+.eciftx>ul>li>p{float:left;}
+.eciftx>ul>li>span{float:right;display:block;}
+.cificatig{width:50%;float:left;height:100%;}
+.cificatig>img{width:756px;height:756px;}
+
+/* 立即订阅 */
+.cytkscribe{width:100%;height:780px;}
+.cytkscribe>div{float:left;padding-left:250px;text-align:center;color:white;}
+.cytkscribe>div>p{font-size:24px;padding-top:400px;padding-bottom:20px;}
+.cytkscribe>div>div{font-size:12px;width:210px;height:40px;border:4px solid white;line-height:32px;transition:0.4s;}
+.cytkscribe>div>div:hover{background:white;color:black;cursor:pointer;}
+.cytkscribe>img{float:right;margin-top:200px;}
+/* 尾部 */
+.csshpbon{padding:20px 0;text-align:center;font-size:12px;color:#F4F4F4;float:left;width:100%;cursor:pointer;}
+.csshpbon>div{margin:0 auto;width:519px;}
+.csshpbon>div>p{text-align:center;float:left;margin:8px;}

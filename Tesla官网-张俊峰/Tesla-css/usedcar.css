@@ -1,0 +1,56 @@
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:black;}
+.logo img{width:100%;height:100%;}
+ .model{width:572px;height:52px;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+ .model a{margin:0 10px;font-size:14px;float:left;text-align:center;font-weight:600;color:black;}
+ .model a:hover{color:#7F7F7F;transition:0.3s;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:black;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:black;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:800px;z-index:2;background:black;opacity:0.2;display:none;position:fixed;top:0;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+
+/* 吸顶导航 */
+.currentcar{width:100%;height:96px;padding:24px;}
+.currentcar>h1{font-size:40px;font-weight:400;padding-left:24px;float:left;}
+.currentcar>select{padding:10px 48px;background:#F4F4F4;float:right;font-size:12px;border:1px solid #7F7F7F;border-radius:20px;margin:10px 50px;cursor:pointer;}
+.currentcar>select>option{cursor:pointer;}
+
+/* 左侧筛选栏 */
+.tsleens{width:386px;height:calc(100vh - 148px);float:left;background:#F4F4F4;padding:48px 24px 0 48px;font-size:14px;color:#5C5E62;}
+.tsleens>div>div>p{display:none;}
+.series{float:left;width:145px;}
+.series>p{width:100%;}
+.series>div:nth-of-type(1)>p{display:block;}
+.modexi{float:left;width:26px;height:26px;border:1px solid black;cursor:pointer;border-radius:50%;padding:6px;margin-right:10px;margin-top:12px;}
+.modexi>p{width:12px;height:12px;border-radius:50%;background:black;}
+.series>span{float:left; height:30px;line-height:32px;margin-top:10px;width:100px;}
+.vehicletype{float:right;width:145px;}
+.vehicletype>div:nth-of-type(2)>p{display:block;}
+.mdlei{float:left;width:26px;height:26px;border:1px solid black;cursor:pointer;border-radius:50%;padding:6px;margin-right:10px;margin-top:12px;}
+.mdlei>p{width:12px;height:12px;border-radius:50%;background:black;}
+.vehicletype>span{float:left; height:30px;line-height:32px;margin-top:10px;width:100px;}
+.carpaint{width:100%;float:left;height:200px;margin-top:100px;}
+.carpaint>div{width:40px;height:40px;border:4px solid transparent;height:40px;border-radius:50%;margin:10px 15px;float:left;cursor:pointer;}
+
+/* 右侧商品栏 */
+.tslcar{width:calc(100vw - 386px);height: calc(100vh - 148px);background:#F4F4F4;overflow-y:auto;padding:48px 48px 0 0px;position:absolute;top:148px;right:0;}
+.tslcar::-webkit-scrollbar{width:10px;background:#F4F4F4;}
+.tslcar::-webkit-scrollbar-thumb{background:pink;border-radius:20px;}
+.canitfindtsl{width:100%;text-align:center;height:180px;padding:48px 24px;font-size:24px;background:white;display:none;}
+
+.vehicle{width:46%;height:500px;background:white;float:left;margin-left:3%;border-radius:10px;color:#5C5E62;margin-top:30px;}
+.vehiclehead{padding:24px;}
+.vehiclehead>h2{font-size:20px;float:left;width:50%;}
+.vehiclehead>h3{font-size:20px;float:right;}
+.masg{width:50%;font-size:12px;color:#5C5E62;}
+.modsimg{width:100%;margin-bottom:10px;}
+.order{width:80%;height:40px;cursor:pointer;background:#3457b1;color:white;text-align:center;line-height:40px;font-size:12px;border-radius:20px;margin:20px 40px;}
+.ddaogao{display:none;}

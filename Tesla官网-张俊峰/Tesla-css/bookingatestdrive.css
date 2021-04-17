@@ -1,0 +1,43 @@
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:black;}
+.logo img{width:100%;height:100%;}
+ .model{width:572px;height:52px;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+ .model a{margin:0 10px;font-size:14px;float:left;text-align:center;font-weight:600;color:black;}
+ .model a:hover{color:#7F7F7F;transition:0.3s;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:black;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:black;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:800px;z-index:2;background:black;opacity:0.2;display:none;position:fixed;top:0;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+
+.yuysj{width:800px;height:100px;margin:10px auto;}
+.yuysj>p{font-size:40px;width:100%;text-align:center;}
+.yuysj>span{font-size:14px;width:100%;text-align:center;padding-top:10px;}
+
+/* 表单 */
+form{width:400px;height:auto;margin:20px auto;}
+form p{font-size:14px;color:#5c5e62;margin:0 20px 8px;}
+form input{padding:10px 20px;border-radius:20px;border: 1px solid transparent;background:#F4F4F4;transition:0.3s;}
+.surname{width:150px;float:left;}
+.surname:nth-of-type(2){float:right;}
+.xinshi{width:148px;height:18px;padding:10px 20px;border-radius:20px;border: 1px solid transparent;background:#F4F4F4;float:left;}
+.xinshi:nth-of-type(2){float:right;}
+.dianzyx{float:left;width:360px;padding-top:20px;}
+.mailbox{width:358px;float:left;}
+select{padding:10px 20px;border-radius:20px;border: 1px solid transparent;background:#F4F4F4;transition:0.3s;width:400px;float:left;}
+.obtain{width:22px;height:22px;float:left;border:2px solid black;border-radius:4px;margin:20px;}
+.obtain>input{width:100%;height:100%;cursor:pointer;}
+form>span{float:left;width:320px;height:20px;font-size:14px;margin:22px 0 20px 0px;}
+.what{float:left;text-align:center;}
+.appointment{width:200px;height:40px;color:white;background:#3E6AE1;padding:5px 40px;cursor:pointer;margin-left:100px;}
+.appointment:hover{background:#3457B1;}
+
+/* 弹窗 */
+.bkingalt{position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;width:300px;height:80px;font-size:14px;color:#4F4F4F;background:#eee;border-radius:20px;padding:20px;display:none;}

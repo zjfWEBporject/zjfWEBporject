@@ -1,0 +1,22 @@
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;position:absolute;top:0;z-index:2;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:white;}
+.logo img{width:100%;height:100%;}
+.dlllll{width:332px;font-size:34px;margin:0 auto;padding-top:80px;padding-bottom:24px;}
+
+/* 登陆表 */
+form{width:336px;height:500px;margin:0 auto;padding:0 24px;}
+form>p{color:#5c5e62;padding-left:20px;font-size:14px;margin-bottom:8px;}
+form input{padding:10px 20px;border-radius:20px;border: 1px solid transparent;background:#F4F4F4;transition:0.3s;width:100%;cursor:pointer;box-sizing:border-box;margin-bottom:20px;font-size:12px;}
+.subdls{color:white;background:#3e6ae1;margin-top:30px;}/* 3457b1 */
+.subdls:hover{background:#3457b1;transition:0.3s;}
+.subqxs{border:3px solid black;margin-bottom:10px;background:white;padding:10px 20px;border-radius:20px;border:3px solid black;background:white;transition:0.3s;width:100%;cursor:pointer;box-sizing:border-box;margin-bottom:20px;font-size:12px;text-align:center;}
+.subqxs:hover{color:white;background:black;}
+.wjyxwjmm{margin:0 auto;width:100%;text-align:center;padding:0;cursor:pointer;font-size:12px;}
+.subcjzh{border:3px solid black;margin-top:50px;background:white;padding:10px 20px;border-radius:20px;border:3px solid black;background:white;transition:0.3s;width:100%;cursor:pointer;box-sizing:border-box;margin-bottom:20px;font-size:12px;text-align:center;}
+.subcjzh:hover{color:white;background:black;}
+.sigzh{width:100%;position:fixed;bottom:30px;text-align:center;font-size:12px;color:#5c5e62;}
+#iesya{width:20px;position:absolute;right:20px;top:40px;cursor:pointer;opacity:0;}
+.errors{font-size:12px;color:red;position:absolute;left:60px;top:2px;display:none;}
+
+.sitis{width:320px;height:86px;position:fixed;font-size:14px;color:#5C5E62;box-shadow: 0 4px 16px rgba(0,0,0,.1);padding:19px 24px;background:white;top:0;left:0;right:0;bottom:0;margin:auto;display:none;text-align:center;}

@@ -1,0 +1,11 @@
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;display:block;}
+img{display:block;}
+div{box-sizing:border-box;}
+span{display:block;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none; margin:0;}
+input{outline:none;}
+/*将默认的select选择框样式清除*/
+select{appearance: none;-moz-appearance:none;-webkit-appearance:none;outline:none;}

@@ -1,0 +1,80 @@
+ body{overflow:hidden;}
+ /* 头部导航栏 */
+.headnavigationbar{width:100%;height:52px;position:absolute;top:0;left:0;z-index:3;}
+.logo{width:100px;height:24px;margin-left:20px;padding-top:14px;float:left;color:white;}
+.logo img{width:100%;height:100%;}
+.model{width:572px;height:100%;padding-top:19.4px;box-sizing:border-box;position:absolute;top:0;left:calc(50% - 286px);}
+.model a{margin:0 10px;font-size:14px;float:left;text-align:center;color:white;}
+.onlinestore{float:right;margin-right:45px;padding-top:19.4px;}
+.onlinestore a{float:left;margin:0 10px;font-size:14px;color:white;font-weight:500;}
+.clicksidebar{width:20px;height:16px;position:absolute;right:15px;top:21px;cursor:pointer;z-index:4;}
+.clicksidebar div{width:20px;height:2px;background:white;position:absolute;}
+.sidebartop{top:0;}
+.sidebarcenter{top:7px;opacity:1;}
+.sidebarbottom{bottom:1px;}
+.greycloth{width:100%;height:800px;z-index:2;background:black;opacity:0.2;display:none;position:fixed;top:0;}
+/* 侧边栏 */
+.sidebar{width:312px;height:800px;padding:51px 20px 20px;background:white;position:fixed;top:0;right:-312px;z-index:3;transition:1s;}
+.sidebar a{font-size:14px;padding:20px 10px;color:black;width:100%;border-bottom:1px solid #D0D1D2;}
+.cylidg{color:white;border:5px solid white;font-size:12px;width:200px;height:40px;padding:5px 40px;text-align:center;line-height:20px;position:absolute;top:6px;right:20px;transition:0.5s;cursor:pointer;display:none;}
+.cylidg:hover{background:white;color:black;transition:0.5s;}
+
+/* 左侧导航栏 */
+.powlef{position:fixed;width:200px;height:189px;top:33%;z-index:2;left:20px;color:white;}
+.powlef>p{width:2%;height:23px;float:left;box-sizing:border-box;border-left:1px solid white;margin:2px 0;}
+.powlef>div{width:98%;height:23px;float:left;margin:2px 0;font-size:12px;line-height:23px;padding-left:10px;cursor:pointer;opacity:0;transition:0.3s;}
+.powlef>div:hover{opacity:1 !important;}
+
+/* 回到顶部 */
+.powding{width:24px;position:fixed;top:20px;right:20px;z-index:2;cursor:pointer;display:none;}
+/* logo */
+.fdlogo{position:fixed;width:100px;height:24px;top:15px;left:20px;z-index:2;display:none;cursor:pointer;}
+
+/* 盒子 */
+.powbox{width:100%;height:700vh;position:absolute;top:0;left:0;}
+/* banner */
+.powbanner{width:100%;height:100vh;background:url(../picture/Denergyhero.jpg);background-size:100%;background-position:center;color:white;position:relative;}
+.powbanner>span{font-size:20px;text-align:center;font-weight:400;position:absolute;top:220px;left:calc(50% - 24px);transition:0.8s;opacity:0;}
+.powbanner>h1{font-size:40px;text-align:center;font-weight:400;position:absolute;top:220px;left:calc(50% - 140px);transition:0.8s;opacity:0;}
+.bananie{width:840px;height:83px;position:absolute;bottom:70px;left:calc(50% - 420px);}
+.bananie>li{width:25%;height:100%;box-sizing:border-box;padding:0 20px;text-align:center;float:left;opacity:0;}
+.bananie>li>img{margin:0 auto;height:40px;}
+.bananie>li>p{font-size:12px;margin-top:5px;}
+.bananie>li:nth-of-type(2){border-left:1px solid white;border-right:1px solid white;}
+.bananie>li>span{font-size:28px;height:40px;line-height:40px;}
+.bananie>li:nth-of-type(4){padding:0;}
+.bananie>li:nth-of-type(4)>div{width:100%;height:40px;border:2px solid white;font-size:12px;border-radius:20px;line-height:38px;cursor:pointer;transition:0.3s;margin-top:14px;}
+.bananie>li:nth-of-type(4)>div:hover{background:white;color:black;}
+
+/* POWERWALL */
+.standbypower{width:100%;height:100vh;position:relative;}
+.sabowimg{width:100%;height:67%;background:url(../picture/dpowerwall.jpg);background-size:100%;background-position:center;}
+.sabtex{width:975px;height:220px;margin:0 auto;padding:48px 0;}
+.abtlef{width:36%;height:100%;float:left;opacity:0;}
+.abtlef>p{font-size:17px;}
+.abtlef>span{font-size:28px;}
+.abtlef>div{font-size:12px;margin-top:20px;width:157px;height:40px;border:3px solid black;text-align:center;line-height:34px;cursor:pointer;transition:0.4s;border-radius:20px;}
+.abtlef>div:hover{background:black;color:white;}
+.abrig{width:64%;height:100%;float:left;font-size:14px;color:#393c41;opacity:0;}
+
+/* 太阳能 */
+.energysupply{width:100%;height:100vh;position:relative;}
+.rgysupimg{width:100%;height:67%;background:url(../picture/dsolarroof.jpg);background-size:100%;background-position:center;}
+.enetex{width:975px;height:220px;margin:0 auto;padding:48px 0;}
+.enelef{width:36%;height:100%;float:left;opacity:0;}
+.enelef>p{font-size:17px;}
+.enelef>span{font-size:28px;}
+.enelef>div{font-size:12px;margin-top:20px;width:157px;height:40px;border:3px solid black;text-align:center;line-height:34px;cursor:pointer;transition:0.4s;border-radius:20px;}
+.enelef>div:hover{background:black;color:white;}
+.enerig{width:64%;height:100%;float:left;font-size:14px;color:#393c41;opacity:0;}
+
+/* 能源存储 */
+.controls{width:100%;height:100vh;}
+.ontroimg{width:100%;height:57%;background:url(../picture/dcommercial.jpg);background-size:100%;background-position:center;}
+.trolltp{width:975px;height:33%;padding-top:50px;margin:0 auto;}
+.rollef{width:36%;height:100%;float:left;opacity:0;}
+.rollef>p{font-size:17px;}
+.rollef>span{font-size:28px;}
+.rollef>div{font-size:12px;margin-top:20px;width:157px;height:40px;border:3px solid black;text-align:center;line-height:34px;cursor:pointer;transition:0.4s;border-radius:20px;float:left;margin-right:10px;}
+.rollef>div:hover{background:black;color:white;}
+.rolrig{width:64%;height:100%;float:left;font-size:14px;color:#393C41;opacity:0;}
