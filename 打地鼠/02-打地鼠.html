@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{background:url(image2/bg.jpg);}
+			*{margin:0;padding:0;cursor:url(image2/cursor.png),auto;}
+			li{list-style:none;}
+			ul{width:900px;height:630px;;margin:50px auto;}
+			ul>li{width:200px;height:160px;float:left;margin:25px 50px;background:url(image2/hole.png) no-repeat center 75px/100%;position: relative;}
+			ul>li>div{width:100%;height:140px;position: absolute;top:-15px;overflow: hidden;}
+			ul>li>div>img{width:80%;position:absolute;left:50%;margin-left:-80px;top:140px;}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="image2/mouse.png" alt=""></div>
+			</li>
+		</ul>
+		<script>
+			// 获取img
+			var imgs = document.getElementsByTagName('img');
+			// 设置定时器
+			setInterval(function(){
+				// 设置一个随机数
+				var res = Math.floor(Math.random()*imgs.length);
+				// 设置变量接收对象
+				var obj = imgs[res];
+				obj.setAttribute('a','0');
+				// console.log(obj)
+				if(obj.getAttribute('a')==0){
+					var num = obj.offsetTop;
+					var time = setInterval(function(){
+						obj.setAttribute('a','1');
+						num--
+						if(num<=0){
+							clearInterval(time)
+							setTimeout(function(){
+								obj.style.top = '140px';
+								obj.setAttribute('a','0');
+							},500)
+						}
+						obj.style.top = num + 'px';
+					},1)
+				}
+			},500)
+			var a = 0;
+			// 给地鼠绑定点击事件
+			for(var i=0;i<imgs.length;i++){
+				imgs[i].onmousedown = function(){
+					this.style.cursor = 'url(image2/cursor-down.png),auto';
+					a++;
+					console.log(a)
+					this.style.top = '140px';
+					this.setAttribute('a','0');
+				}
+			}
+		</script>
+	</body>
+</html>
