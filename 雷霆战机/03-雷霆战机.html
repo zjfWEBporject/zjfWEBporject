@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+			*{margin:0;padding:0;}
+			.box{width:320px;height:528px;background:url(image/bg.png);margin:0 auto;position:relative;}
+			.bg{width:320px;height:528px;background:url(image/start.png);position: absolute;z-index: 1;}
+			.bg>button{position: absolute;bottom:50px;left:50%;margin-left:-16px;}
+			.zj{width:66px;height:80px;background: url(image/fj.gif);position:absolute;bottom:0;left:calc(50% - 33px);}
+			.djs{width:320px;height:528px;position: absolute;overflow: hidden;}
+			.dj{position:absolute;left:0px;top:0px;}
+			.zds{width:320px;height:528px;position: absolute;overflow: hidden;}
+			.zd{position:absolute;left:0px;top:0px;}
+			.cj{position: absolute;top:20px;left:20px;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="bg">
+				<button onclick="start()">开始</button>
+			</div>
+			<div class="djs">
+				<!-- <img src="image/dj1.png" alt="" class="dj"> -->
+			</div>
+			<div class="zds">
+				<!-- <img src="image/zd.png" alt="" class="zd"> -->
+			</div>
+			<div class="zj"></div>
+			<div class="cj">0分</div>
+		</div>
+		<script>
+			function start(){
+				// console.log(1)
+				/*
+					1.设置背景图片的移动
+					2.通过鼠标控制飞机移动
+				 */
+				var box = document.getElementsByClassName('box')[0];
+				var zj = document.getElementsByClassName('zj')[0];
+				var djs = document.getElementsByClassName('djs')[0];
+				var zds = document.getElementsByClassName('zds')[0];
+				var bg = document.getElementsByClassName('bg')[0];
+				var cj = document.getElementsByClassName('cj')[0];
+				bg.style.display='none';
+				zj.style.background = 'url(image/fj.gif)';
+				var cjnum = 0;
+				var bgNum = 0;
+				var bgtime = setInterval(function(){
+					bgNum++;
+					box.style.backgroundPositionY =bgNum+'px';
+				},10)
+				
+				// 给box绑定鼠标移动事件
+				box.onmousemove = function(e){
+					var ev = e||window.event;
+					zj.style.left = ev.clientX-box.offsetLeft-zj.offsetWidth/2+'px';
+					zj.style.top = ev.clientY-box.offsetTop-zj.offsetHeight/2+'px';
+					if(zj.offsetLeft<=0){
+						zj.style.left=0;
+					}
+					if(zj.offsetLeft>=(box.offsetWidth-zj.offsetWidth)){
+						zj.style.left=box.offsetWidth-zj.offsetWidth+'px';
+					}
+					if(zj.offsetTop<=0){
+						zj.style.top=0;
+					}
+					if(zj.offsetTop>=(box.offsetHeight-zj.offsetHeight)){
+						zj.style.top = box.offsetHeight-zj.offsetHeight+'px';
+					}
+				}
+				
+				// 在djs内创建敌机
+				var djstime = setInterval(function(){
+					var dj = document.createElement('img');
+					dj.t = -24;
+					dj.src='image/dj1.png';
+					dj.className = 'dj';
+					dj.style.top = dj.t+'px';
+					dj.style.left = Math.floor(Math.random()*(box.offsetWidth-34))+'px';
+					djs.appendChild(dj);
+					var res = dj.t;
+					var time = setInterval(function(){
+						res++;
+						dj.flag = true;
+						dj.t=res;
+						dj.style.top = dj.t+'px';
+						if(dj.t>=(box.offsetHeight+24)){
+							clearInterval(time);
+							djs.removeChild(dj);
+						}
+						if(dj.flag){
+							// 判断敌机是否与子弹相撞
+							var dzd = document.querySelectorAll('.zd');
+							for(var i=0;i<dzd.length;i++){
+								// dzd[i]
+								if(dj.offsetTop>=(dzd[i].offsetTop-24)&&(dj.offsetLeft<=(dzd[i].offsetLeft+6))&&(dj.offsetLeft>=(dzd[i].offsetLeft-34))){
+									cjnum++;
+									cj.innerHTML = cjnum+'分'
+									dzd[i].flag = false;
+									var that = dzd[i]
+									dj.src='image/boom.gif';
+									clearInterval(time);
+									setTimeout(function(){
+										if(dj.flag){
+											dj.flag = false;
+											djs.removeChild(dj);
+										}
+									},500)
+									zds.removeChild(that)
+								}
+							}
+							// 判断敌机与战机是否相撞
+							if(dj.offsetTop>=(zj.offsetTop-24)&&(dj.offsetLeft<=(zj.offsetLeft+66))&&(dj.offsetLeft>=(zj.offsetLeft-34))){
+								bg.style.display = 'block';
+								// console.log(1)
+								zj.style.background = 'url(image/zjfj.gif)';
+								box.onmousemove = null;
+								clearInterval(bgtime);
+								clearInterval(djstime);
+								clearInterval(zdstime);
+							}
+						}						
+					},1)
+				},1000)
+				
+				var zdstime = setInterval(function(){
+					// 设置飞机吐子弹
+					var zd = document.createElement('img');
+					zd.src = 'image/zd.png';
+					zd.flag=true
+					zd.className = 'zd';
+					zd.style.top = zj.offsetTop-14+'px';
+					zd.style.left = zj.offsetLeft+33-3+'px';
+					zds.appendChild(zd);
+					var res = zj.offsetTop-14;
+					var time = setInterval(function(){
+						res--;
+						zd.style.top = res+'px';
+						if(res<=0){
+							clearInterval(time);
+							if(zd.flag){
+								zds.removeChild(zd);
+							}
+							
+						}
+					},1)
+				},500)
+			}
+				
+			
+			
+		</script>
+	</body>
+</html>
